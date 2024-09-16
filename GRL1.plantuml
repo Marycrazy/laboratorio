@@ -1,0 +1,29 @@
+@startuml
+rectangle "Sistema de Reservas e Gestão de Inventário" {
+  (Melhorar Eficiência\nOperacional) as G1
+  (Aumentar Satisfação\ndo Cliente) as G2
+  cloud "Alto Desempenho" as SG1
+  cloud "Alta Disponibilidade" as SG2
+  cloud "Segurança de Dados" as SG3
+  cloud "Usabilidade" as SG4
+  rectangle "Otimizar Processos\nde Reserva" as T1
+  rectangle "Implementar Sistema\nde Alerta de Estoque" as T2
+  rectangle "Desenvolver Interface\nResponsiva" as T3
+  rectangle "Implementar Backup\nAutomático" as T4
+  rectangle "Usar Criptografia\npara Dados Sensíveis" as T5
+}
+
+G1 --> SG1
+G1 --> SG2
+G2 --> SG3
+G2 --> SG4
+SG1 <-- T1
+SG2 <-- T4
+SG3 <-- T5
+SG4 <-- T3
+T1 --> G2
+T2 --> G1
+T3 --> G2
+T4 --> G1
+T5 --> G1
+@enduml

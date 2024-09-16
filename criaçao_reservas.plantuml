@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+actor "Cliente" as CL
+actor "Funcionário" as FU
+actor "Gerente" as GE
+actor "Cozinheiro" as CO
+actor "Propriatário" as PR
+
+rectangle "Sistema de Reservas e Gestão de Inventário" {
+  usecase "Criar Reserva" as UC1
+  usecase "Gerenciar Reservas" as UC2
+  usecase "Atualizar Status das Mesas" as UC3
+  usecase "Gerenciar Inventário" as UC4
+  usecase "Gerar Alertas de Estoque" as UC5
+  usecase "Gerenciar Menu" as UC6
+  usecase "Cancelar/Modificar Reserva" as UC7
+  usecase "Gerar Relatórios" as UC8
+  usecase "Especificar Requisitos Especiais" as UC9
+  usecase "Processar Pagamentos" as UC10
+}
+
+CL --> UC1
+CL --> UC7
+CL --> UC9
+CL --> UC3
+FU --> UC2
+FU --> UC3
+FU --> UC10
+FU --> UC4
+GE --> UC5
+PR --> UC8
+CO --> UC6
+@enduml

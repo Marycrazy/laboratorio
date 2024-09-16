@@ -1,0 +1,32 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(cliente, "Cliente", "Utilizador que faz reservas")
+Person(funcionario, "Funcionário", "Gerencia reservas e mesas")
+Person(gerente, "Gerente", "Administra o sistema")
+Person(proprietario, "Propriatário", "Dono do restaurante")
+
+System_Boundary(c1, "Sistema de Reservas e Gestão de Inventário") {
+    Container(web_app, "Aplicação Web", "JavaScript, React", "Interface para clientes e funcionários")
+    Container(api, "API", "Python, Flask", "Lida com lógica de negócios")
+    Container(db, "Base de Dados", "PostgreSQL", "Armazena dados de reservas, inventário e Utilizadores")
+    Container(notificacao, "Serviço de Notificação", "Python", "Envia alertas e confirmações")
+}
+
+System_Ext(pagamento, "Sistema de Pagamento", "Processa pagamentos e depósitos")
+System_Ext(relatorios, "Gerador de Relatórios", "Cria relatórios personalizados")
+
+Rel(cliente, web_app, "Usa", "HTTPS")
+Rel(funcionario, web_app, "Usa", "HTTPS")
+Rel(gerente, web_app, "Usa", "HTTPS")
+Rel(proprietario, web_app, "Usa", "HTTPS")
+
+Rel(web_app, api, "Faz chamadas para", "JSON/HTTPS")
+Rel(api, db, "Lê e escreve", "SQL")
+Rel(api, notificacao, "Usa")
+Rel(api, pagamento, "Usa", "API")
+Rel(api, relatorios, "Usa", "API")
+
+Rel(notificacao, cliente, "Envia e-mails e SMS")
+Rel(notificacao, funcionario, "Envia alertas")
+@enduml
