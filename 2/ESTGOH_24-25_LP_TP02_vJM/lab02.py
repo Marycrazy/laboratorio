@@ -32,7 +32,7 @@ class M:
             self.r = False # Define a reserva como falsa
 
 class R: 
- def __init__(self, c, np, d, m):
+ def __init__(self, c, np, d, m): 
      self.c = c # Cliente
      self.num_pessoas = np # Número de pessoas
      self.data_reserva = d # Data da reserva

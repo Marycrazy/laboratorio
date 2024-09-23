@@ -1,0 +1,193 @@
+\doxysection{Referência à classe lab02.\+Gestor}
+\hypertarget{classlab02_1_1Gestor}{}\label{classlab02_1_1Gestor}\index{lab02.Gestor@{lab02.Gestor}}
+
+
+Esta classe representa o gestor do restaurante.  
+
+
+\doxysubsubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_a1f9958657d42c463f36a4b4b7ede811b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Construtor da classe Gestor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_ae88e5f9431717b1de53541264a288c8a}{adicionar\+Reserva}} (self, cliente, num\+\_\+pessoas, data)
+\begin{DoxyCompactList}\small\item\em Método adicionar\+Reserva. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_adadf8685af3a9e968eaeb499148d335e}{encontrar\+Mesa}} (self, num\+\_\+pessoas)
+\begin{DoxyCompactList}\small\item\em Método encontrar\+Mesa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_a5d47a1e21e3bb1c155cc163d8e9f7106}{verificar\+Reserva}} (self, nome\+\_\+cliente)
+\begin{DoxyCompactList}\small\item\em Método verificar\+Reserva. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_a6c7a60615851b74326ae741da3f7a3b1}{cancelar\+Reserva}} (self, cliente, data)
+\begin{DoxyCompactList}\small\item\em Método cancelar\+Reserva. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_a53341ebc5a770fea5a4c7e22dd601a93}{adicionar\+Produto}} (self, nome\+\_\+produto, quantidade)
+\begin{DoxyCompactList}\small\item\em Método adicionar\+Produto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_a52500e603a12dae97fee27e718f26117}{consumir\+Produto}} (self, nome\+\_\+produto, quantidade)
+\begin{DoxyCompactList}\small\item\em Método consumir\+Produto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlab02_1_1Gestor_a7e6f0e0cfc8d5bcced64b04a7573c4c0}{verificar\+Inventario}} (self, nome\+\_\+produto)
+\begin{DoxyCompactList}\small\item\em Método verificar\+Inventario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlab02_1_1Gestor_a0fae29336e5ced5ba675f176ee47c059}\label{classlab02_1_1Gestor_a0fae29336e5ced5ba675f176ee47c059} 
+{\bfseries lista\+\_\+reservas}
+\begin{DoxyCompactList}\small\item\em Lista de todas as reservas. \end{DoxyCompactList}\item 
+\Hypertarget{classlab02_1_1Gestor_a13e61b48110ad61ae0de7ebddfcff25d}\label{classlab02_1_1Gestor_a13e61b48110ad61ae0de7ebddfcff25d} 
+{\bfseries inventario}
+\begin{DoxyCompactList}\small\item\em Dicionário com o inventário de produtos. \end{DoxyCompactList}\item 
+\Hypertarget{classlab02_1_1Gestor_a0fc477f0d455cf47b280498d8a848d30}\label{classlab02_1_1Gestor_a0fc477f0d455cf47b280498d8a848d30} 
+{\bfseries mesas}
+\begin{DoxyCompactList}\small\item\em Lista de mesas do restaurante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Esta classe representa o gestor do restaurante. 
+
+Possui os atributos lista\+\_\+reservas, inventario e mesas. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\Hypertarget{classlab02_1_1Gestor_a1f9958657d42c463f36a4b4b7ede811b}\label{classlab02_1_1Gestor_a1f9958657d42c463f36a4b4b7ede811b} 
+\index{lab02.Gestor@{lab02.Gestor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe Gestor. 
+
+Inicializa a lista de reservas, o inventário e as mesas. Cria 10 mesas de 4 pessoas. 
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{classlab02_1_1Gestor_a53341ebc5a770fea5a4c7e22dd601a93}\label{classlab02_1_1Gestor_a53341ebc5a770fea5a4c7e22dd601a93} 
+\index{lab02.Gestor@{lab02.Gestor}!adicionarProduto@{adicionarProduto}}
+\index{adicionarProduto@{adicionarProduto}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{adicionarProduto()}{adicionarProduto()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+adicionar\+Produto (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nome\+\_\+produto,  }\item[{}]{quantidade }\end{DoxyParamCaption})}
+
+
+
+Método adicionar\+Produto. 
+
+Adiciona um produto ao inventário. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+\_\+produto} & Nome do produto. \\
+\hline
+{\em quantidade} & Quantidade do produto. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab02_1_1Gestor_ae88e5f9431717b1de53541264a288c8a}\label{classlab02_1_1Gestor_ae88e5f9431717b1de53541264a288c8a} 
+\index{lab02.Gestor@{lab02.Gestor}!adicionarReserva@{adicionarReserva}}
+\index{adicionarReserva@{adicionarReserva}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{adicionarReserva()}{adicionarReserva()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+adicionar\+Reserva (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cliente,  }\item[{}]{num\+\_\+pessoas,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Método adicionar\+Reserva. 
+
+Adiciona uma reserva para um cliente. 
+\begin{DoxyParams}{Parâmetros}
+{\em cliente} & Objeto do tipo Cliente. \\
+\hline
+{\em num\+\_\+pessoas} & Número de pessoas. \\
+\hline
+{\em data} & Data da reserva. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab02_1_1Gestor_a6c7a60615851b74326ae741da3f7a3b1}\label{classlab02_1_1Gestor_a6c7a60615851b74326ae741da3f7a3b1} 
+\index{lab02.Gestor@{lab02.Gestor}!cancelarReserva@{cancelarReserva}}
+\index{cancelarReserva@{cancelarReserva}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{cancelarReserva()}{cancelarReserva()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+cancelar\+Reserva (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cliente,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Método cancelar\+Reserva. 
+
+Cancela uma reserva para um dado cliente. 
+\begin{DoxyParams}{Parâmetros}
+{\em cliente} & Objeto do tipo Cliente. \\
+\hline
+{\em data} & Data da reserva. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlab02_1_1Gestor_a52500e603a12dae97fee27e718f26117}\label{classlab02_1_1Gestor_a52500e603a12dae97fee27e718f26117} 
+\index{lab02.Gestor@{lab02.Gestor}!consumirProduto@{consumirProduto}}
+\index{consumirProduto@{consumirProduto}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{consumirProduto()}{consumirProduto()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+consumir\+Produto (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nome\+\_\+produto,  }\item[{}]{quantidade }\end{DoxyParamCaption})}
+
+
+
+Método consumir\+Produto. 
+
+Consome um produto do inventário. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+\_\+produto} & Nome do produto. \\
+\hline
+{\em quantidade} & Quantidade do produto. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepções}
+{\em Exception} & Se o produto não existir ou se não houver quantidade suficiente. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlab02_1_1Gestor_adadf8685af3a9e968eaeb499148d335e}\label{classlab02_1_1Gestor_adadf8685af3a9e968eaeb499148d335e} 
+\index{lab02.Gestor@{lab02.Gestor}!encontrarMesa@{encontrarMesa}}
+\index{encontrarMesa@{encontrarMesa}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{encontrarMesa()}{encontrarMesa()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+encontrar\+Mesa (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{num\+\_\+pessoas }\end{DoxyParamCaption})}
+
+
+
+Método encontrar\+Mesa. 
+
+Encontra uma mesa disponível para um dado número de pessoas. 
+\begin{DoxyParams}{Parâmetros}
+{\em num\+\_\+pessoas} & Número de pessoas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Mesa Primeira mesa disponível com capacidade suficiente, ou None se não houver mesa disponível. 
+\end{DoxyReturn}
+\Hypertarget{classlab02_1_1Gestor_a7e6f0e0cfc8d5bcced64b04a7573c4c0}\label{classlab02_1_1Gestor_a7e6f0e0cfc8d5bcced64b04a7573c4c0} 
+\index{lab02.Gestor@{lab02.Gestor}!verificarInventario@{verificarInventario}}
+\index{verificarInventario@{verificarInventario}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{verificarInventario()}{verificarInventario()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+verificar\+Inventario (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nome\+\_\+produto }\end{DoxyParamCaption})}
+
+
+
+Método verificar\+Inventario. 
+
+Verifica a quantidade de um dado produto no inventário. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+\_\+produto} & Nome do produto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int Quantidade do produto no inventário, ou 0 se o produto não existir. 
+\end{DoxyReturn}
+\Hypertarget{classlab02_1_1Gestor_a5d47a1e21e3bb1c155cc163d8e9f7106}\label{classlab02_1_1Gestor_a5d47a1e21e3bb1c155cc163d8e9f7106} 
+\index{lab02.Gestor@{lab02.Gestor}!verificarReserva@{verificarReserva}}
+\index{verificarReserva@{verificarReserva}!lab02.Gestor@{lab02.Gestor}}
+\doxysubsubsection{\texorpdfstring{verificarReserva()}{verificarReserva()}}
+{\footnotesize\ttfamily lab02.\+Gestor.\+verificar\+Reserva (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nome\+\_\+cliente }\end{DoxyParamCaption})}
+
+
+
+Método verificar\+Reserva. 
+
+Verifica se existe uma reserva para um dado cliente. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+\_\+cliente} & Nome do cliente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Reserva Reserva do cliente, caso exista, ou None caso contrário. 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+/home/dinis/\+Downloads/src/lab02.\+py\end{DoxyCompactItemize}
